@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/id_controls">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Video Title"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:id="@+id/id_TV_VideoTitle"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_centerInParent="true">
+
+        <ImageButton
+            android:id="@+id/id_control_IB_10m"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_replay"
+            app:tint="@color/white"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/id_control_play"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_play"
+            app:tint="@color/white"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/id_control_IB_10p"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_forward_10_24"
+            app:tint="@color/white"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:padding="4dp"
+        android:layout_margin="1dp"
+         >
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:progressBackgroundTint="@color/white"
+            android:progressTint="@color/teal_200"
+            android:thumb="@drawable/seekbar_thumb"
+            android:id="@+id/id_control_SB"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Time"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:id="@+id/id_control_time"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
